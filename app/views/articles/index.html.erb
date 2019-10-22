@@ -1,0 +1,9 @@
+<h1 class="blah">HP Articles</h1>
+<button><%= link_to "Create a new article", new_article_path, class: "someclass" %></button>
+
+<% @articles.each do |article| %>
+  <h2><%= link_to article.title, article_path(article) %></h2>
+  <hr>
+<% end %>
+
+
